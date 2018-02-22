@@ -19,6 +19,7 @@ int main()
     return 0;
 }
 
+//
 int welcome() 
 {
     int tablasQty;
