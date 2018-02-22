@@ -19,7 +19,6 @@ int main()
     return 0;
 }
 
-//
 int welcome() 
 {
     int tablasQty;
@@ -47,7 +46,7 @@ void output(int tablasQty)
     heading << setw(25) << left << "| Multiplicado por";
     for (int multiplos = 0; multiplos <= tablasQty; multiplos++)
     {
-        heading << setw(5) << right << multiplos;
+        heading << "|" << setw(5) << right << multiplos;
     }
     for (int lines = 0; lines < heading.str().size(); lines++)
     {
@@ -67,7 +66,7 @@ void output(int tablasQty)
         cout << setw(25) << left << tabla;
         for (int j = 0; j <= tablasQty; j++)
         {
-            cout << setw(5) << right << i * j;
+            cout << "|" << setw(5) << right << i * j;
         }
         cout << " |" << endl;
     }
